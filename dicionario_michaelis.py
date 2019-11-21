@@ -27,7 +27,8 @@ soup = BeautifulSoup(page.text, 'html.parser')
 # Pegar o texto da div verbete bs-component
 vocabulos = soup.find(class_='verbete bs-component')
 
-# Pegar o texto de todas as instâncias das tags dentro da div BodyText
+# Pegar o texto de todas as instâncias das tags dentro da div BodyText, pois
+# o texto dos verbetes não possui tag
 vocabulos_items = vocabulos.find_all('acn')
 vocabulos_items2 = vocabulos.find_all('div')
 vocabulos_items3 = vocabulos.find_all('rn')
