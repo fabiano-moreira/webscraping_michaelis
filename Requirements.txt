@@ -1,4 +1,0 @@
-Tenha instalado os pacotes beautifulsoup e requests.
-É possível instalar com os comandos abaixo:
-pip install beautifulsoup4
-pip install requests
